@@ -1,0 +1,62 @@
+.toggle-container {
+  background: #3d348b7e;
+  height: 40px;
+  width: 80px;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.rail {
+  background: #3d348b;
+  height: 16px;
+  width: 35px;
+
+  border-radius: 20px;
+}
+
+.ball {
+  background: aliceblue;
+  position: absolute;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  left: 16%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-container input {
+  display: none;
+}
+
+.toggle-container input:checked + label {
+  left: 40%;
+}
+
+.indicator {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #585858;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+input:checked ~ .indicator {
+  background: rgb(82, 253, 90);
+}
+
+@media screen and (max-width: 900px) {
+  .toggle-container {
+    top: 0;
+    right: 0;
+    background: none;
+  }
+}

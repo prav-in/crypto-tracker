@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@400&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.crypto-app {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #788bff;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.crypto-search {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.crypto-search h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Titillium Web", sans-serif;
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-list {
+  transform-origin: top;
+}
+
+.crypto-search input {
+  outline: none;
+  height: 40px;
+  width: 300px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  background: #3d348b;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.crypto-search input::placeholder {
+  color: rgb(219, 215, 215);
+}
+
+.crypto-search input:focus {
+  transform: scale(1.1);
+
+  background: #3d348bb2;
+  color: #fff;
+}
+
+/* Dark Mode */
+
+.crypto-dark {
+  background: black;
+}
+
+.search-dark input {
+  background: white;
+  color: black;
+}
+
+.search-dark input:focus {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+.search-dark h1 {
+  color: #ffd100;
 }

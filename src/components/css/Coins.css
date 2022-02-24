@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@400&display=swap");
+
+.coin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 75vw;
+  border-radius: 5px;
+  margin: 3px;
+  background: rgb(255, 255, 255, 0.8);
+}
+
+.coin-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.coin img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+p {
+  display: inline-block;
+  margin: 6px;
+}
+
+.coin h1 {
+  font-size: 1.2rem;
+  font-family: "Titillium Web", sans-serif;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.coin-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  text-align: center;
+}
+
+.coin-price {
+  width: 120px;
+}
+
+.coin-volume {
+  width: 300px;
+}
+
+.coin-percent {
+  width: 70px;
+}
+.coin-market-cap {
+  width: 250px;
+}
+
+.red {
+  color: #bf0603;
+}
+
+.green {
+  color: green;
+}
+
+.head-container {
+  background: #3d348bb7;
+  margin-bottom: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.head-container h1 {
+  margin-left: 50px;
+}
+
+/* Dark Mode */
+
+.head-container-dark {
+  background: #ffd000e8;
+  color: black;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.head-container-dark h1 {
+  margin-left: 50px;
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width: 900px) {
+  .head-container h1 {
+    margin-left: 0;
+  }
+
+  .head-container-dark h1 {
+    margin-left: 0;
+  }
+  .coin-container {
+    height: 150px;
+    width: 80vw;
+  }
+
+  .coin h1 {
+    text-align: center;
+  }
+
+  .coin {
+    flex-direction: column;
+    width: 50%;
+  }
+  .coin-data {
+    flex-direction: column;
+    width: 50%;
+  }
+}
